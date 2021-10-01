@@ -1,9 +1,9 @@
 let menuElements = `[
     
-    {"label" : "ABOUT"},
-    {"label" : "PRODUCT"},
-    {"label" : "BLOG"},
-    {"label" : "CONTACTS"}
+    {"label" : "about"},
+    {"label" : "technology"},
+    {"label" : "blog"},
+    {"label" : "contacts"}
 ]`
 
 document.addEventListener('DOMContentLoaded', function(event) {
