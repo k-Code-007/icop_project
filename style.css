@@ -40,6 +40,12 @@
       margin-top: 100px;
   }
   
+  #myVideo {
+      width: 100vw;
+      margin: auto;
+      height: 85vh;
+  }
+  
   .container_about,
   .container_technology {
       display: flex;
