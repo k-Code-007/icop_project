@@ -5,62 +5,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="blog.css">
     <link rel="stylesheet" href="style.css">
-    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <title>ICop</title>
+
 </head>
 
 <body>
+
     <div id="Home" class="wrapper">
+
         <div class="menu">
-            <img src="img/logo.jpg" class="menu_logo" alt="logo">
+            <img src="img/logo4.bmp" class="menu_logo" alt="logo">
 
             <ul class="menu_regular">
-                <li class="menu_element"><a class='refference' href="index.html#about">About </a></li>`
-                <li class="menu_element"><a class='refference' href="index.html#technology">Technology </a></li>`
-                <li class="menu_element"><a class='refference' href="blog.html">Blog </a></li>`
-                <li class="menu_element"><a class='refference' href="index.html#contacts">Contacts </a></li>`
+                <li class="menu_element"><a class='refference' href="#about">About </a></li>
+                <li class="menu_element"><a class='refference' href="#technology">Technology </a></li>
+                <li class="menu_element"><a class='refference' href="blog.html">Photogrammetry <br> in the AI Era </a></li>
+                <li class="menu_element"><a class='refference' href="#contacts">Contacts </a></li>
             </ul>
 
         </div>
+
+        <div class="video">
+            <video autoplay="autoplay" loop="loop" muted playsinline id="myVideo">
+                <source src="video/1.mp4" type="video/mp4">
+            </video>
+            <video autoplay="autoplay" loop="loop" muted playsinline id="myVideo">
+                <source src="video/2.mp4" type="video/mp4">
+            </video>
+            <video autoplay="autoplay" loop="loop" muted playsinline id="myVideo">
+                <source src="video/3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="d-block w-100" alt="slide" autoplay="autoplay" muted playsinline id="myVideo">
+                <source src="video/1.mp4" type="video/mp4">
+            </video>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-item active">
+                        <video class="d-block w-100" alt="slide" autoplay="autoplay" muted playsinline id="myVideo">
+                <source src="video/2.mp4" type="video/mp4">
+                </div>
+                <div class="carousel-item">
+                   <div class="carousel-item active">
+                     <video class="d-block w-100" alt="slide" autoplay="autoplay"  muted playsinline id="myVideo">
+                <source src="video/3.mp4" type="video/mp4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Back</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div> -->
     </div>
 
-    <section id="blog" class="blog">
 
-        <h2>Blog</h2>
+    <section id="about" class="about">
+
+        <h2>About</h2>
         <hr>
-        <div class="container_blog">
-            <div class="blog_element">
-                <img src="img/video_1.jpg" alt="img" class="blog_element_image">
-                <div class="blog_element_article">
-                    <h2>Article 1</h2>
-                    <p class="blog_element_text">Lorem ipsum dolor sit amet. Et nemo dolor et ullam temporibus non saepe asperiores. Qui velit voluptatum sed molestiae ipsa sint expedita vel praesentium dolor non natus cupiditate hic iure reiciendis et provident quia? Et ipsum sunt
-                        sit illo internos ut possimus expedita ut aperiam iusto ad reiciendis alias! Et quia doloribus rem vero similique rem labore autem. Cum suscipit quibusdam aut voluptas eaque sit cumque iure ea velit galisum et magnam magnam et
-                        odio et officia enim. </p>
-                </div>
-            </div>
-            <div class="blog_element">
-                <img src="img/video_1.jpg" alt="img" class="blog_element_image">
-                <div class="blog_element_article">
-                    <h2>Article 2</h2>
-                    <p class="blog_element_text">Lorem ipsum dolor sit amet. Et nemo dolor et ullam temporibus non saepe asperiores. Qui velit voluptatum sed molestiae ipsa sint expedita vel praesentium dolor non natus cupiditate hic iure reiciendis et provident quia? Et ipsum sunt
-                        sit illo internos ut possimus expedita ut aperiam iusto ad reiciendis alias! Et quia doloribus rem vero similique rem labore autem. Cum suscipit quibusdam aut voluptas eaque sit cumque iure ea velit galisum et magnam magnam et
-                        odio et officia enim. </p>
-                </div>
-            </div>
-            <div class="blog_element">
-                <img src="img/video_1.jpg" alt="img" class="blog_element_image">
-                <div class="blog_element_article">
-                    <h2>Article 3</h2>
-                    <p class="blog_element_text">Lorem ipsum dolor sit amet. Et nemo dolor et ullam temporibus non saepe asperiores. Qui velit voluptatum sed molestiae ipsa sint expedita vel praesentium dolor non natus cupiditate hic iure reiciendis et provident quia? Et ipsum sunt
-                        sit illo internos ut possimus expedita ut aperiam iusto ad reiciendis alias! Et quia doloribus rem vero similique rem labore autem. Cum suscipit quibusdam aut voluptas eaque sit cumque iure ea velit galisum et magnam magnam et
-                        odio et officia enim. </p>
-                </div>
+        <div class="container_about">
+            <img src="img/video_1.jpg" alt="img" class="about_image">
+            <div class="about_text">
+                <p>Lorem ipsum dolor sit amet. Et nemo dolor et ullam temporibus non saepe asperiores. Qui velit voluptatum sed molestiae ipsa sint expedita vel praesentium dolor non natus cupiditate hic iure reiciendis et provident quia? Et ipsum sunt sit
+                    illo internos ut possimus expedita ut aperiam iusto ad reiciendis alias! Et quia doloribus rem vero similique rem labore autem. Cum suscipit quibusdam aut voluptas eaque sit cumque iure ea velit galisum et magnam magnam et odio et
+                    officia enim. Est magnam suscipit qui molestiae quibusdam qui dolor rerum aut dolores sint. Ut corrupti ducimus non dolor omnis non totam Quis. In doloribus asperiores qui rerum animi ad libero optio? Hic illo cupiditate non voluptatem
+                    odio sit nemo explicabo eum accusantium quos aut consequatur ducimus.</p>
             </div>
         </div>
     </section>
 
-    <script src="blog.js"></script>
+    <section id="technology" class="technology">
+
+        <h2>Technology</h2>
+        <hr>
+        <div class="container_technology">
+            <div class="technoligy_element">
+                <img src="img/video_1.jpg" alt="img" class="technoligy_element_image">
+
+                <p class="technoligy_element_text">Lorem ipsum dolor sit amet. Et nemo dolor et ullam temporibus non saepe asperiores. Qui velit voluptatum sed molestiae ipsa sint expedita vel praesentium dolor non natus cupiditate hic iure reiciendis et provident quia? Et ipsum sunt sit
+                    illo internos ut possimus expedita ut aperiam iusto ad reiciendis alias! Et quia doloribus rem vero similique rem labore autem. Cum suscipit quibusdam aut voluptas eaque sit cumque iure ea velit galisum et magnam magnam et odio et
+                    officia enim. </p>
+            </div>
+            <div class="technoligy_element">
+                <img src="img/video_1.jpg" alt="img" class="technoligy_element_image">
+
+                <p class="technoligy_element_text">Lorem ipsum dolor sit amet. Et nemo dolor et ullam temporibus non saepe asperiores. Qui velit voluptatum sed molestiae ipsa sint expedita vel praesentium dolor non natus cupiditate hic iure reiciendis et provident quia? Et ipsum sunt sit
+                    illo internos ut possimus expedita ut aperiam iusto ad reiciendis alias! Et quia doloribus rem vero similique rem labore autem. Cum suscipit quibusdam aut voluptas eaque sit cumque iure ea velit galisum et magnam magnam et odio et
+                    officia enim. </p>
+            </div>
+            <div class="technoligy_element">
+                <img src="img/video_1.jpg" alt="img" class="technoligy_element_image">
+
+                <p class="technoligy_element_text">Lorem ipsum dolor sit amet. Et nemo dolor et ullam temporibus non saepe asperiores. Qui velit voluptatum sed molestiae ipsa sint expedita vel praesentium dolor non natus cupiditate hic iure reiciendis et provident quia? Et ipsum sunt sit
+                    illo internos ut possimus expedita ut aperiam iusto ad reiciendis alias! Et quia doloribus rem vero similique rem labore autem. Cum suscipit quibusdam aut voluptas eaque sit cumque iure ea velit galisum et magnam magnam et odio et
+                    officia enim. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contact">
+        <h2>Contact Us</h2>
+        <hr>
+
+        <form action="https://formspree.io/f/mbjqbgao" method="POST">
+            <div class="contact_form">
+                <label>
+         <p class="contact_form_text"> Your email:</p>
+          <input type="email" name="_replyto">
+        </label>
+                <label>
+         <p class="contact_form_text">Your message:</p> 
+          <textarea name="message"></textarea>
+        </label>
+                <!-- your other form fields go here -->
+                <button class="contact_form_btn" type="submit">Send</button>
+            </div>
+        </form>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 
