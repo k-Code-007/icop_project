@@ -1,20 +1,13 @@
-// let menuElements = `[
+window.onscroll = () => {
+    const myBtn = document.querySelector('.clickBtnGoTop');
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        myBtn.style.display = 'block';
+    } else {
+        myBtn.style.display = 'none';
+    }
+}
 
-//     {"label" : "about"},
-//     {"label" : "technology"},
-//     {"label" : "blog"},
-//     {"label" : "contacts"}
-// ]`
-
-// document.addEventListener('DOMContentLoaded', function(event) {
-//     let menu = JSON.parse(menuElements);
-//     let menuContent = '';
-
-//     for (item of menu) {
-//         menuContent += `
-//             <li class="menu_element"><a class='refference' href="#${item.label}">${item.label} </a></li>`;
-//     }
-
-//     document.querySelector(".menu_regular").innerHTML = menuContent;
-
-// });
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

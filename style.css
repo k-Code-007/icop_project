@@ -188,3 +188,30 @@ textarea {
     color: #902633;
     text-align: center;
 }
+
+.footer_element:hover {
+    color: black;
+}
+
+.btnGoTop {
+    background: transparent;
+    color: #902633;
+    padding: 15px 20px;
+    margin: 25px;
+    /* border-radius: 40px; */
+    font-size: 20px;
+    border: 1px solid #e19240;
+    /* transform: rotate(270deg); */
+}
+
+.clickBtnGoTop {
+    display: flex;
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+
+.btnGoTop:hover {
+    cursor: pointer;
+}
