@@ -1,0 +1,119 @@
+.menu {
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    /* background-color: #A7C2D3; */
+    background-color: #A7C2D3;
+    border-bottom: px solid #b3cddd;
+    height: 100px;
+}
+
+.menu_logo {
+    /* width: 250px; */
+    margin-top: 10px;
+    width: 200px;
+    height: fit-content;
+}
+
+.menu_regular {
+    display: flex;
+    margin-right: 160px;
+}
+
+.menu_element {
+    display: flex;
+    margin: 25px 50px;
+    padding: 10px;
+    list-style: none;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+.refference {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Gruppo', cursive;
+    font-weight: 600;
+    color: #902633;
+    text-align: center;
+}
+
+.refference:hover {
+    color: #902633;
+    /* text-decoration: overline underline #e19240; */
+    transform: scale(1.1);
+    transition: 1s ease-in;
+}
+
+section {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.section_heading {
+    font-family: 'Gruppo', cursive;
+    font-weight: 600;
+    color: #902633;
+    text-transform: uppercase;
+}
+
+
+/* footer */
+
+.footer {
+    margin-top: 100px;
+}
+
+.footer_regular {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+}
+
+.footer_element {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Gruppo', cursive;
+    font-weight: 600;
+    color: #902633;
+    text-align: center;
+}
+
+.footer_element:hover {
+    color: black;
+}
+
+
+/* btn goTop */
+
+.btnGoTop {
+    background: transparent;
+    color: #902633;
+    padding: 15px 20px;
+    margin: 25px;
+    /* border-radius: 40px; */
+    font-size: 20px;
+    border: 1px solid #e19240;
+    /* transform: rotate(270deg); */
+}
+
+.clickBtnGoTop {
+    display: flex;
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+
+.btnGoTop:hover {
+    cursor: pointer;
+}

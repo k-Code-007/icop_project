@@ -1,0 +1,19 @@
+.container_blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_element {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.blog_element_image {
+    width: 500px;
+}
+
+.blog_element_article {
+    width: 40%;
+}
