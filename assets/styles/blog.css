@@ -5,15 +5,65 @@
 
 .blog_element {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 100px;
 }
 
+.blog_element_text_intro {
+    width: 500px;
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.blog_element_text_intro>h5 {
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    font-weight: 800;
+}
+
 .blog_element_image {
     width: 500px;
+    height: 300px;
+}
+
+.art1Img {
+    display: flex;
+    justify-content: center;
+}
+
+.article1_image {
+    margin: 100px;
+    width: 500px;
+    height: 300px;
+}
+
+.blog_element_text {
+    width: 80vw;
+    margin: auto;
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .blog_element_article {
-    width: 40%;
+    margin-top: 100px;
+}
+
+.toggle-box {
+    display: none;
+}
+
+.toggle-box+label {
+    display: block;
+}
+
+.toggle-box+label+div {
+    display: none;
+}
+
+.toggle-box:checked+label+div {
+    display: block;
+    padding: 5px;
 }
