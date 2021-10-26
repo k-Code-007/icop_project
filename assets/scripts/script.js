@@ -1,7 +1,3 @@
-gsap.from(".slogan1", { x: -500, opacity: 0, duration: 2 })
-
-
-
 window.onscroll = () => {
     const myBtn = document.querySelector('.clickBtnGoTop');
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
