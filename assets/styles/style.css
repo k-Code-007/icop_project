@@ -40,6 +40,45 @@
     min-height: 100vh;
 }
 
+.slogans {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan {
+    margin-top: 50px;
+}
+
+.slogan_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+
+.slogan_element {
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan_icon {
+    width: 70px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.slogan_inner {
+    list-style: none;
+    margin: auto;
+    width: 250px;
+    display: flex;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
 .container_about,
 .container_technology {
     display: flex;
