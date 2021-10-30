@@ -176,6 +176,9 @@ section {
     .map_info {
         text-align: center;
     }
+    .wrapper {
+        min-height: 80vh;
+    }
 }
 
 @media all and (max-width: 850px) {
@@ -201,6 +204,9 @@ section {
     .clickBtnGoTop,
     .btnGoTop {
         display: none;
+    }
+    .wrapper {
+        min-height: 70vh;
     }
 }
 
@@ -240,10 +246,16 @@ section {
         height: 40vh;
         margin-bottom: 50px;
     }
+    .wrapper {
+        min-height: 70vh;
+    }
 }
 
 @media all and (max-width: 550px) {
     .map_info {
         width: 80%;
+    }
+    .wrapper {
+        min-height: 50vh;
     }
 }
