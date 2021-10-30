@@ -1,29 +1,31 @@
+body {
+    width: 100%;
+}
+
 .menu {
     top: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    /* background-color: #A7C2D3; */
+    /* display: flex;
+    flex-flow: row nowrap; */
     background-color: #A7C2D3;
-    border-bottom: px solid #b3cddd;
     height: 100px;
 }
 
 .menu_logo {
-    /* width: 250px; */
+    width: 150px;
     margin-top: 10px;
-    width: 200px;
+    /* width: 10vw; */
     height: fit-content;
 }
 
 .menu_regular {
     display: flex;
-    margin-right: 160px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .menu_element {
     display: flex;
-    margin: 25px 50px;
+    /* margin: 25px 50px; */
     padding: 10px;
     list-style: none;
     /* border: 1px solid black; */
@@ -34,6 +36,7 @@
     text-decoration: none;
     color: black;
     font-size: 20px;
+    padding: 20px;
     text-transform: uppercase;
     font-family: 'Gruppo', cursive;
     font-weight: 600;
@@ -116,4 +119,67 @@ section {
 
 .btnGoTop:hover {
     cursor: pointer;
+}
+
+@media all and (max-width: 1470px) {
+    .refference {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .technoligy_element_text {
+        font-size: 15px;
+    }
+    .about_heading,
+    p {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 1010px) {
+    .footer_element {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .container_about {
+        flex-direction: column;
+    }
+    .about_text {
+        margin-top: 50px;
+        width: 80%;
+        text-align: justify;
+    }
+    .refference {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .section_heading {
+        font-size: 15px;
+    }
+    .contact_form_text,
+    .contact_form_btn {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .footer {
+        display: none;
+    }
+}
+
+@media all and (max-width: 675px) {
+    .container_technology {
+        flex-direction: column;
+        align-items: center;
+    }
+    .technoligy_element,
+    .technoligy_element_image {
+        width: 80%;
+    }
+    input,
+    textarea {
+        width: 300px;
+    }
 }
