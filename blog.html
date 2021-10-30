@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
     <title>ICop</title>
 
 </head>
@@ -20,24 +25,26 @@
     <div id="Home" class="wrapper">
 
         <div class="menu">
-            <img src="assets/img/logo4.bmp" class="menu_logo" alt="logo">
-
             <ul class="menu_regular">
+                <li class="menu_element"> <img src="assets/img/logo4.bmp" class="menu_logo" alt="logo"></li>
                 <li class="menu_element"><a class='refference' href="index.html#about">About </a></li>
                 <li class="menu_element"><a class='refference' href="index.html#technology">Technology </a></li>
                 <li class="menu_element"><a class='refference' href="blog.html">smart photogrammetry</a></li>
+                <!-- <li class="menu_element"><a class='refference' href="blog.html">Photogrammetry </a></li> -->
                 <li class="menu_element"><a class='refference' href="index.html#contacts">Contacts </a></li>
             </ul>
 
         </div>
+
+
         <div class="burger_menu">
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="burger_menu_back">
                     <ul class="burger_menu_regular">
-                        <li class="menu_element"><a class='refference' href="#about">About </a></li>
-                        <li class="menu_element"><a class='refference' href="#technology">Technology </a></li>
+                        <li class="menu_element"><a class='refference' href="index.html#about">About </a></li>
+                        <li class="menu_element"><a class='refference' href="index.html#technology">Technology </a></li>
                         <li class="menu_element"><a class='refference' href="blog.html">smart photogrammetry</a></li>
-                        <li class="menu_element"><a class='refference' href="#contacts">Contacts </a></li>
+                        <li class="menu_element"><a class='refference' href="index.html#contacts">Contacts </a></li>
                     </ul>
                 </div>
             </div>
@@ -61,9 +68,10 @@
             <div class="blog_element">
                 <img src="assets/img/article_img.jpg" alt="img" class="blog_element_article_image">
                 <div class="blog_element_text_intro">
-                    <p class="blog_element_intro">Dear fans of photogrammetry, remote sensing, computer vision, and artificial intelligence!<br> With this article, I would like to open a series of publications under the general title
-                        <h3>Smart Photogrammetry</h3> <br> The forced silence, which stretched for 6 years, ended. I intend to return to my usual rate of 2-3 articles per month! Moreover, a lot of topics for discussion have accumulated. I urge everyone who
-                        has something to say to join. Publications and kind criticism are encouraged.</p> <br>
+                    <p class="blog_element_intro">Dear fans of photogrammetry, remote sensing, computer vision, and artificial intelligence!<br> With this article, I would like to open a series of publications under the general title</p>
+                    <p class="blog_element_intro_center">Smart Photogrammetry</p> <br>
+                    <p class="blog_element_intro">The forced silence, which stretched for 6 years, ended. I intend to return to my usual rate of 2-3 articles per month! Moreover, a lot of topics for discussion have accumulated. I urge everyone who has something to say to join. Publications
+                        and kind criticism are encouraged.</p> <br>
                     <p>Yours sincerely,<br> Evgeny Medvedev<br> Haifa, the Mediterranean coast
                     </p>
                 </div>
@@ -73,7 +81,7 @@
                 <h2 class="section_heading">Story #1 Artificial Intelligence and a Bike </h2>
                 <hr>
             </div>
-            <div class="blog_element">
+            <!-- <div class="blog_element">
 
                 <div class="blog_element_article_main">
                     <div class="left">
@@ -83,38 +91,38 @@
                         <div class="art1Img"> <img src="assets/img/article_bikejpg.jpg" alt="img" class="article1_image"></div>
                         <p class="blog_element_text">What can a neural network say from a single snapshot of a bicycle? Much. The neural network (AI, Deep Learning) allows us to assert that the picture shows a bike. It detects the presence of a front and rear wheel, as well as performs
                             image segmentation, i.e., selects fragments of the image that geometrically correspond to a particular object. Fig. 2 shows the results of recognition and segmentation using the popular YOLO900 platform.</p>
-                        <!-- <input class="toggle-box" id="identifier-1" type="checkbox">
+                         <input class="toggle-box" id="identifier-1" type="checkbox">
                     <label for="identifier-1">Read more...</label>
-                    <div>-->
-                        <div class="art1Img"> <img src="assets/img/article_bike_img2.png" alt="img" class="article1_image"></div>
-                        <p class="blog_element_text">What can a complex of neural network and an advanced photogrammetric procedure (“smart photogrammetry”!) do with a single image of a bicycle? So many! Smart photogrammetry can calculate distances, areas and volumes, speeds, and
-                            accelerations. Provide quantitative estimates of the probabilities of collision of moving objects, establish the similarities and differences of objects, calibrate video cameras, and much more. And smart photogrammetry can
-                            do all this with very modest processing and photographic resources. A regular smartphone is fine. Of course, if it is possible to have more than one snapshot, i.e. this is only a plus. The more shots, the deeper the results
-                            and the higher the accuracy. However, today we are just getting started. And we begin with a bicycle and with a single shot.<br> Let us show that a single shot is enough to perform a complete spatial orientation of the object
-                            model (bicycle). Let's introduce the physical coordinate system for the bicycle, as shown in Fig. 3 </p>
-                        <div class="art1Img"> <img src="assets/img/article_bike_img3.png" alt="img" class="article1_image"></div>
-                        <p class="blog_element_text">In Fig. 4 shows a photogrammetric observation scheme. The real bicycle wheel is shown in brown on the right. Nothing is known about his position and orientation. The image of the wheel in the image coordinate system is shown in
-                            blue. This is the result of AI work. This is known data.</p>
-                        <div class="art1Img"><img src="assets/img/article_bike_img4.png" alt="img" class="article1_image"></div>
-                        <p class="blog_element_text">In Fig. 4 the following designations are adopted:</p>
-                        <ul>
-                            <li class="blog_element_text">oXYZ – camera coordinate system.</li>
-                            <li class="blog_element_text">S – sensor plane.</li>
-                            <li class="blog_element_text"> P – the principal point</li>
-                            <li class="blog_element_text"> M – the main point</li>
-                            <li class="blog_element_text"> Xc, Yc – approximate center of the wheel image.</li>
-                        </ul>
+                    <div>
+            <div class="art1Img"> <img src="assets/img/article_bike_img2.png" alt="img" class="article1_image"></div>
+            <p class="blog_element_text">What can a complex of neural network and an advanced photogrammetric procedure (“smart photogrammetry”!) do with a single image of a bicycle? So many! Smart photogrammetry can calculate distances, areas and volumes, speeds, and accelerations.
+                Provide quantitative estimates of the probabilities of collision of moving objects, establish the similarities and differences of objects, calibrate video cameras, and much more. And smart photogrammetry can do all this with very modest
+                processing and photographic resources. A regular smartphone is fine. Of course, if it is possible to have more than one snapshot, i.e. this is only a plus. The more shots, the deeper the results and the higher the accuracy. However, today
+                we are just getting started. And we begin with a bicycle and with a single shot.<br> Let us show that a single shot is enough to perform a complete spatial orientation of the object model (bicycle). Let's introduce the physical coordinate
+                system for the bicycle, as shown in Fig. 3 </p>
+            <div class="art1Img"> <img src="assets/img/article_bike_img3.png" alt="img" class="article1_image"></div>
+            <p class="blog_element_text">In Fig. 4 shows a photogrammetric observation scheme. The real bicycle wheel is shown in brown on the right. Nothing is known about his position and orientation. The image of the wheel in the image coordinate system is shown in blue. This
+                is the result of AI work. This is known data.</p>
+            <div class="art1Img"><img src="assets/img/article_bike_img4.png" alt="img" class="article1_image"></div>
+            <p class="blog_element_text">In Fig. 4 the following designations are adopted:</p>
+            <ul>
+                <li class="blog_element_text">oXYZ – camera coordinate system.</li>
+                <li class="blog_element_text">S – sensor plane.</li>
+                <li class="blog_element_text"> P – the principal point</li>
+                <li class="blog_element_text"> M – the main point</li>
+                <li class="blog_element_text"> Xc, Yc – approximate center of the wheel image.</li>
+            </ul>
 
-                        <!-- </div> -->
-                    </div>
-                    <div class="left">
-                        <p class="blog_element_text">We will assume that the focal length is known and equal to F </p>
-                        <h3>| PM | = F</h3>
-                        <p class="blog_element_text">The vector Rc going from P to the physical center of the wheel is expressed as in oXYZ:</p>
-                        <h3>, , ), | Rc | = 1</h3>
-                    </div>
-                </div>
-            </div>
+            </div> 
+        </div>
+        <div class="left">
+            <p class="blog_element_text">We will assume that the focal length is known and equal to F </p>
+            <h3>| PM | = F</h3>
+            <p class="blog_element_text">The vector Rc going from P to the physical center of the wheel is expressed as in oXYZ:</p>
+            <h3>, , ), | Rc | = 1</h3>
+        </div>
+        </div>
+        </div> -->
         </div>
 
         </div>
