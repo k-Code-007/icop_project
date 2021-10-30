@@ -51,6 +51,35 @@ body {
     transition: 1s ease-in;
 }
 
+.burger_menu {
+    display: none;
+}
+
+.burger_menu_regular {
+    display: flex;
+    flex-direction: column;
+    background-color: #A7C2D3;
+    margin: 0;
+    padding: 0;
+}
+
+.burger_menu_back {
+    background-color: #A7C2D3;
+}
+
+.burger-menu_container {
+    display: flex;
+    justify-content: space-around;
+    background: #A7C2D3;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 0;
+    margin-top: -10px;
+}
+
 section {
     max-width: 80%;
     margin: auto;
@@ -161,6 +190,10 @@ section {
     .contact_form_btn {
         font-size: 15px;
     }
+    .clickBtnGoTop,
+    .btnGoTop {
+        display: none;
+    }
 }
 
 @media all and (max-width: 800px) {
@@ -181,5 +214,11 @@ section {
     input,
     textarea {
         width: 300px;
+    }
+    .burger_menu {
+        display: block;
+    }
+    .menu {
+        display: none;
     }
 }
