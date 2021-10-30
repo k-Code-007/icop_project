@@ -211,7 +211,7 @@ section {
 }
 
 @media all and (max-width: 800px) {
-    .footer {
+    .hidden_on_small {
         display: none;
     }
 }
