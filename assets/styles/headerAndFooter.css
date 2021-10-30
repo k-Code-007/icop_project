@@ -155,13 +155,14 @@ section {
         font-size: 15px;
         font-weight: 600;
     }
-    .technoligy_element_text {
-        font-size: 15px;
-    }
-    .about_heading,
+    .technoligy_element_text,
     p {
         font-size: 15px;
     }
+    /* .about_heading,
+    .technology_bold {
+        font-size: 15px;
+    } */
 }
 
 @media all and (max-width: 1010px) {

@@ -6,13 +6,13 @@
 }
 
 .video {
-    margin-top: 64px;
+    margin-top: 13.5vh;
 }
 
 #myVideo {
     /* max-width: 65vw;*/
-    max-height: 70vh;
-    margin-left: -55px;
+    max-height: 67vh;
+    margin-left: -67px;
     position: relative;
 }
 
@@ -52,19 +52,26 @@
     width: 47%;
     height: 50%;
     align-self: center;
-    font-family: 'Gruppo', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: black;
 }
 
-.about_heading {
+
+/* .about_heading {
     font-style: italic;
     font-weight: 600;
-}
+    font-family: 'Gruppo', cursive;
+    font-size: 25px;
+} */
 
+.about_heading,
 .technology_bold {
     font-weight: 600;
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .technoligy_element {
@@ -73,8 +80,8 @@
 }
 
 .technoligy_element_text {
-    font-family: 'Gruppo', cursive;
-    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     font-size: 20px;
     color: black;
     text-align: center;
