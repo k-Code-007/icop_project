@@ -141,3 +141,18 @@ input {
 textarea {
     height: 200px;
 }
+
+.contact_and_map {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.map_info {
+    margin-top: 86px;
+}
+
+.map {
+    width: 450px;
+    height: 350px;
+}

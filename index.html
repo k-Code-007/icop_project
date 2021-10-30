@@ -133,22 +133,29 @@
     <section id="contacts" class="contact">
         <h2 class="section_heading">Contact Us</h2>
         <hr>
-
-        <form action="https://formspree.io/f/mbjqbgao" method="POST">
-            <div class="contact_form">
-                <label>
+        <div class="contact_and_map">
+            <div class="contacting_info">
+                <form action="https://formspree.io/f/mbjqbgao" method="POST">
+                    <div class="contact_form">
+                        <label>
          <p class="contact_form_text"> Your email:</p>
           <input type="email" name="_replyto">
         </label>
-                <label>
+                        <label>
          <p class="contact_form_text">Your message:</p> 
           <textarea name="message"></textarea>
         </label>
-                <!-- your other form fields go here -->
-                <button class="contact_form_btn" type="submit">Send</button>
+                        <!-- your other form fields go here -->
+                        <button class="contact_form_btn" type="submit">Send</button>
+                    </div>
+                </form>
             </div>
-        </form>
 
+            <div class="map_info">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53956.24593695246!2d34.82536849671146!3d32.30472361584737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d400493c075d5%3A0x2cd995be543c3f22!2sNetanya%2C%20Israel!5e0!3m2!1sen!2sca!4v1635561008874!5m2!1sen!2sca"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
     </section>
 
     <section class="footer">
