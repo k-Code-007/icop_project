@@ -1,6 +1,6 @@
 const back = document.querySelector('#back');
 const next = document.querySelector('#next');
-const videos = ["./assets/video/highway-mgleft.mp4", "./assets/video/doroga-mgleft.mp4", "./assets/video/mama-mgleft.mp4", "./assets/video/tonel-mgleft.mp4", "./assets/video/5_mgleft.mp4"]
+const videos = ["./assets/video/highway.mp4", "./assets/video/road.mp4", "./assets/video/yield.mp4", "./assets/video/tonel.mp4", "./assets/video/offencive.mp4"]
 const vd1 = document.querySelector('#myVideo');
 
 let i = 0;
