@@ -5,20 +5,21 @@
 }
 
 .video {
-    margin-top: 14.5vh;
+    margin-top: 50px;
 }
 
 #myVideo {
     /* max-width: 65vw;*/
-    height: 65vh;
-    margin-left: -55px;
-    position: relative;
+    /* height: 75vh;*/
+    width: 70vw;
+    /* margin-left: -67px; */
+    /* position: relative; */
 }
 
 .phoneImg {
     display: flex;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .btnSlider {
@@ -27,12 +28,13 @@
     background-color: transparent;
     border: none;
     align-self: center;
-    margin: 22% 5%;
+    margin: 10vh 3vw;
 }
 
 .phoneImgBack {
-    margin-top: 70px;
-    width: 74vw;
+    margin-top: 50px;
+    height: 74vh;
+    margin-left: -33px;
     position: absolute;
 }
 
