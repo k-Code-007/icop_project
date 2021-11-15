@@ -189,13 +189,16 @@ li {
 }
 
 .technology_side {
+    margin: auto;
     text-align: center;
+    justify-content: center;
 }
 
 .technology_side_image {
     margin: 30px;
     width: 500px;
     height: 350px;
+    justify-content: center;
 }
 
 .contact_form {
