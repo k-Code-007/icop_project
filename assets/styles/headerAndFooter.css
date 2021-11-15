@@ -262,6 +262,12 @@ section {
     .formula {
         font-size: 10px;
     }
+    .main-container img {
+        width: 300px;
+    }
+    .about_image {
+        width: 300px;
+    }
 }
 
 @media all and (max-width: 550px) {
