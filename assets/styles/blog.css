@@ -85,6 +85,12 @@ h3 {
     padding: 5px;
 } */
 
+.main-container p {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
 .blog_element_article_main {
     display: flex;
     flex-direction: column;

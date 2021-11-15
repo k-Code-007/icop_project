@@ -259,6 +259,9 @@ section {
     .wrapper {
         min-height: 70vh;
     }
+    .formula {
+        font-size: 10px;
+    }
 }
 
 @media all and (max-width: 550px) {
@@ -273,5 +276,8 @@ section {
     }
     .technology_side_image {
         width: 300px;
+    }
+    .formula {
+        font-size: 8px;
     }
 }
