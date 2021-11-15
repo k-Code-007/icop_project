@@ -339,6 +339,7 @@
                 </div>
                 <br>
                 <p>In Fig. <a href="#fig:bike-constr">4</a> the following designations are adopted:<br />
+                    <br>
                     <span class="math inline">\(oXYZ\)</span> – camera coordinate system.<br />
                     <span class="math inline">\(S\)</span> – sensor plane.<br />
                     <span class="math inline">\(P\)</span> – the principal point<br />
@@ -357,18 +358,23 @@
         \left|\pmb {R_c}\right| = 1
         \]</span> Let us introduce an auxiliary plane <span class="math inline">\(T\)</span>, passing through the point <span class="math inline">\(( X_c,Y_c,F )\)</span> and perpendicular to <span class="math inline">\(\pmb {R_c}\)</span>.
                     The equation of this plane in <span class="math inline">\(oXYZ\)</span> looks as follows:
+                    <br>
                     <span class="math display">\[
         \frac{X_c}{L}(X-X_c) + \frac{Y_c}{L}(Y-Y_c) + \frac{Z_c}{L}(Z-Z_c) = 0
-        \]</span> We now select a point <span class="math inline">\((X_c, Y_c, F)\)</span> as the origin and set an arbitrary rectangular coordinate system. A one-to-one correspondence can be established between the wheel images in
+        \]</span>
+                    <br> We now select a point <span class="math inline">\((X_c, Y_c, F)\)</span> as the origin and set an arbitrary rectangular coordinate system. A one-to-one correspondence can be established between the wheel images in
                     <span class="math inline">\(S\)</span> and <span class="math inline">\(T\)</span> (Fig. <a href="#fig:coord-trans">5</a>). The projection ray <span class="math inline">\(\pmb r\)</span> passing through the point <span class="math inline">\((x, y)\)</span>                    in <span class="math inline">\(S\)</span> intersects <span class="math inline">\(T\)</span> at some point <span class="math inline">\((x ’, y’)\)</span>. These coordinates can be determined using the following equation:</p>
+                <br>
                 <p><span class="math display" id="eq:proj-coord">\[\begin{equation}
         \frac{X_c}{L}(\lambda \frac{X}{{L}^*} - X_c) + \frac{Y_c}{L}(\lambda \frac{Y}{{L}^*} - Y_c) + \frac{Z_c}{L}(\lambda \frac{Z}{{L}^*} - Z_c) = 0,
         \tag{1}
         \end{equation}\]</span></p>
                 <p>where -
+                    <br>
                     <span class="math display">\[
         {L}^* = \sqrt{X^2 + Y^2 + Z^2}
         \]</span> This equation is always solved for <span class="math inline">\(\lambda\)</span>, which gives the coordinates of the intersection at <span class="math inline">\(T\)</span> at <span class="math inline">\(oXYZ\)</span>:
+                    <br>
                     <span class="math display">\[
         X^* = \lambda_0 \frac{X}{L^*}
         \]</span>
@@ -383,15 +389,18 @@
         \]</span></p>
                 <span class="math display">\[
         \pmb{Y_t} = \pmb V \times \pmb{Y_t}
-        \]</span> where <span class="math inline">\(\pmb V = (X^* - X_c, Y^* - Y_c, Z^* - F)\)</span> and <span class="math inline">\(\pmb {X_t}, \pmb{Y_t}\)</span> are the basis vectors of <span class="math inline">\(oXYZ\)</span>. The
-                inverse transformation can be performed similarly.
+        \]</span>
+                <p>where <span class="math inline">\(\pmb V = (X^* - X_c, Y^* - Y_c, Z^* - F)\)</span> and <span class="math inline">\(\pmb {X_t}, \pmb{Y_t}\)</span> are the basis vectors of <span class="math inline">\(oXYZ\)</span>. The inverse transformation
+                    can be performed similarly.</p>
+
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
                     <img src="assets/img/article5.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="50%">
                     <p class="caption">
                         Figure 5
                     </p>
                 </div>
-                <br> The curve <span class="math inline">\(\Phi\)</span> in the first approximation can be considered an ellipse. Its semi-major axis a in the plane T is parallel to the plane of the wheel in the object coordinate system (Fig. <a href="#fig:coord-trans2">6</a>).
+                <br>
+                <p>The curve <span class="math inline">\(\Phi\)</span> in the first approximation can be considered an ellipse. Its semi-major axis a in the plane T is parallel to the plane of the wheel in the object coordinate system (Fig. <a href="#fig:coord-trans2">6</a>).</p>
                 <br>
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
                     <img src="assets/img/article6.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="35%">
@@ -408,9 +417,10 @@
         \]</span>
                     <span class="math display">\[
         \pmb a \perp \pmb b, \pmb A \perp \pmb B
-        \]</span> Note that the vector produced by <span class="math inline">\(\pmb A \times \pmb B\)</span> coincides in direction with the <span class="math inline">\(\pmb {X^b}\)</span> axis of the object. The angle between the
-                    plane <span class="math inline">\(T\)</span> and the plane of the wheel is <span class="math inline">\(\alpha\)</span>, and the line of their intersection is parallel to <span class="math inline">\(\pmb a\)</span>. Thus, the relative
-                    position of the plane of the wheel and <span class="math inline">\(T\)</span> can be considered determined with an accuracy to scale. Since the mutual position of <span class="math inline">\(T\)</span> and <span class="math inline">\(S\)</span>                    is well defined, we can assume that <span class="math inline">\(\pmb {X^b}\)</span> is well defined in <span class="math inline">\(oXYZ\)</span>:
+        \]</span>
+                    <br> Note that the vector produced by <span class="math inline">\(\pmb A \times \pmb B\)</span> coincides in direction with the <span class="math inline">\(\pmb {X^b}\)</span> axis of the object. The angle between the plane <span class="math inline">\(T\)</span>                    and the plane of the wheel is <span class="math inline">\(\alpha\)</span>, and the line of their intersection is parallel to <span class="math inline">\(\pmb a\)</span>. Thus, the relative position of the plane of the wheel and
+                    <span class="math inline">\(T\)</span> can be considered determined with an accuracy to scale. Since the mutual position of <span class="math inline">\(T\)</span> and <span class="math inline">\(S\)</span> is well defined, we can assume
+                    that <span class="math inline">\(\pmb {X^b}\)</span> is well defined in <span class="math inline">\(oXYZ\)</span>:
                     <span class="math display">\[
         \pmb {X^b} = ({X_X}^b, {X_Y}^b, {X_Z}^b)
         \]</span> Note that the projection of the <span class="math inline">\(\pmb {X^b}\)</span> axis in the SC of the image coincides with the lower tangent to both wheels, which immediately gives us the vector <span class="math inline">\(\pmb {Y^b}\)</span>                    in <span class="math inline">\(oXYZ\)</span>. The vector <span class="math inline">\(\pmb {Z^b}\)</span> can be obtained as the cross product of <span class="math inline">\(\pmb {X^b}\)</span> and <span class="math inline">\(\pmb {Y^b}\)</span>.</p>
