@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 
     <script src="data:application/javascript;base64,Ly8gUGFuZG9jIDIuOSBhZGRzIGF0dHJpYnV0ZXMgb24gYm90aCBoZWFkZXIgYW5kIGRpdi4gV2UgcmVtb3ZlIHRoZSBmb3JtZXIgKHRvCi8vIGJlIGNvbXBhdGlibGUgd2l0aCB0aGUgYmVoYXZpb3Igb2YgUGFuZG9jIDwgMi44KS4KZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uKGUpIHsKICB2YXIgaHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCJkaXYuc2VjdGlvbltjbGFzcyo9J2xldmVsJ10gPiA6Zmlyc3QtY2hpbGQiKTsKICB2YXIgaSwgaCwgYTsKICBmb3IgKGkgPSAwOyBpIDwgaHMubGVuZ3RoOyBpKyspIHsKICAgIGggPSBoc1tpXTsKICAgIGlmICghL15oWzEtNl0kL2kudGVzdChoLnRhZ05hbWUpKSBjb250aW51ZTsgIC8vIGl0IHNob3VsZCBiZSBhIGhlYWRlciBoMS1oNgogICAgYSA9IGguYXR0cmlidXRlczsKICAgIHdoaWxlIChhLmxlbmd0aCA+IDApIGgucmVtb3ZlQXR0cmlidXRlKGFbMF0ubmFtZSk7CiAgfQp9KTsK"></script>
@@ -296,7 +299,7 @@
                     an inertial system… Then it might say something.</p>
                 <br>
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
-                    <img src="assets/img/article1.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="60%" />
+                    <img src="assets/img/article1.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="65%" />
                     <p class="caption">
                         Figure 1
                     </p>
@@ -306,7 +309,7 @@
                     segmentation by selecting fragments of the image that geometrically correspond to a particular object. Fig. <a href="#fig:bike-Sereja">2</a> shows the results of recognition and segmentation using the popular YOLO900 platform.</p>
                 <br>
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
-                    <img src="assets/img/article2.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="40%" />
+                    <img src="assets/img/article2.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="50%" />
                     <p class="caption">
                         Figure 2
                     </p>
@@ -322,7 +325,7 @@
                 <p>Let’s show why a single shot is enough to perform a complete spatial orientation of our bicycle object model. In Fig. <a href="#fig:bike-coords">3</a> we introduce a coordinate system for the bicycle.</p>
                 <br>
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
-                    <img src="assets/img/article3.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="35%" />
+                    <img src="assets/img/article3.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="40%" />
                     <p class="caption">
                         Figure 3
                     </p>
@@ -332,7 +335,7 @@
                     system) is shown in blue. This is the result of AI work. This is known data.</p>
                 <br>
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
-                    <img src="assets/img/article4.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="50%" />
+                    <img src="assets/img/article4.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="60%" />
                     <p class="caption">
                         Figure 4
                     </p>
@@ -340,95 +343,100 @@
                 <br>
                 <p>In Fig. <a href="#fig:bike-constr">4</a> the following designations are adopted:<br />
                     <br>
-                    <span class="math inline">\(oXYZ\)</span> – camera coordinate system.<br />
-                    <span class="math inline">\(S\)</span> – sensor plane.<br />
-                    <span class="math inline">\(P\)</span> – the principal point<br />
-                    <span class="math inline">\(M\)</span> – the main point<br />
-                    <span class="math inline">\(Xc, Yc\)</span> – approximate center of the wheel image.<br /> We will assume that the focal length is known and equal to <span class="math inline">\(F\)</span>
-                    <span class="math display">\[
+                    <span class="math inline formula">\(oXYZ\)</span> – camera coordinate system.<br />
+                    <span class="math inline formula">\(S\)</span> – sensor plane.<br />
+                    <span class="math inline formula">\(P\)</span> – the principal point<br />
+                    <span class="math inline formula">\(M\)</span> – the main point<br />
+                    <span class="math inline formula">\(Xc, Yc\)</span> – approximate center of the wheel image.<br /> We will assume that the focal length is known and equal to <span class="math inline formula">\(F\)</span>
+                    <span class="math display formula">\[
         \left|\pmb{PM}\right| = F
-        \]</span> The vector <span class="math inline">\(\pmb{R_c}\)</span> going from <span class="math inline">\(P\)</span> to the physical center of the wheel is expressed as in <span class="math inline">\(oXYZ\)</span>:
-                    <span class="math display">\[
+        \]</span> The vector <span class="math inline formula">\(\pmb{R_c}\)</span> going from <span class="math inline formula">\(P\)</span> to the physical center of the wheel is expressed as in <span class="math inline formula">\(oXYZ\)</span>:
+                    <span class="math display formula">\[
         \pmb {R_c} = (\frac{X_c}{L}, \frac{Y_c}{L}, \frac{Z_c}{L})
         \]</span>
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         L = \sqrt{{X_c}^2 + {Y_c}^2 + {Z_c}^2}
         \]</span>
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         \left|\pmb {R_c}\right| = 1
-        \]</span> Let us introduce an auxiliary plane <span class="math inline">\(T\)</span>, passing through the point <span class="math inline">\(( X_c,Y_c,F )\)</span> and perpendicular to <span class="math inline">\(\pmb {R_c}\)</span>.
-                    The equation of this plane in <span class="math inline">\(oXYZ\)</span> looks as follows:
+        \]</span> Let us introduce an auxiliary plane <span class="math inline formula">\(T\)</span>, passing through the point <span class="math inline formula">\(( X_c,Y_c,F )\)</span> and perpendicular to <span class="math inline formula">\(\pmb {R_c}\)</span>.
+                    The equation of this plane in <span class="math inline formula">\(oXYZ\)</span> looks as follows:
                     <br>
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         \frac{X_c}{L}(X-X_c) + \frac{Y_c}{L}(Y-Y_c) + \frac{Z_c}{L}(Z-Z_c) = 0
         \]</span>
-                    <br> We now select a point <span class="math inline">\((X_c, Y_c, F)\)</span> as the origin and set an arbitrary rectangular coordinate system. A one-to-one correspondence can be established between the wheel images in
-                    <span class="math inline">\(S\)</span> and <span class="math inline">\(T\)</span> (Fig. <a href="#fig:coord-trans">5</a>). The projection ray <span class="math inline">\(\pmb r\)</span> passing through the point <span class="math inline">\((x, y)\)</span>                    in <span class="math inline">\(S\)</span> intersects <span class="math inline">\(T\)</span> at some point <span class="math inline">\((x ’, y’)\)</span>. These coordinates can be determined using the following equation:</p>
+                    <br> We now select a point <span class="math inline formula">\((X_c, Y_c, F)\)</span> as the origin and set an arbitrary rectangular coordinate system. A one-to-one correspondence can be established between the wheel images in
+                    <span class="math inline formula">\(S\)</span> and <span class="math inline formula">\(T\)</span> (Fig. <a href="#fig:coord-trans">5</a>). The projection ray <span class="math inline formula">\(\pmb r\)</span> passing through the point
+                    <span class="math inline formula">\((x, y)\)</span> in <span class="math inline formula">\(S\)</span> intersects <span class="math inline formula">\(T\)</span> at some point <span class="math inline formula">\((x ’, y’)\)</span>. These
+                    coordinates can be determined using the following equation:</p>
                 <br>
-                <p><span class="math display" id="eq:proj-coord">\[\begin{equation}
+                <p><span class="math display formula" id="eq:proj-coord">\[\begin{equation}
         \frac{X_c}{L}(\lambda \frac{X}{{L}^*} - X_c) + \frac{Y_c}{L}(\lambda \frac{Y}{{L}^*} - Y_c) + \frac{Z_c}{L}(\lambda \frac{Z}{{L}^*} - Z_c) = 0,
         \tag{1}
         \end{equation}\]</span></p>
                 <p>where -
                     <br>
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         {L}^* = \sqrt{X^2 + Y^2 + Z^2}
-        \]</span> This equation is always solved for <span class="math inline">\(\lambda\)</span>, which gives the coordinates of the intersection at <span class="math inline">\(T\)</span> at <span class="math inline">\(oXYZ\)</span>:
+        \]</span> This equation is always solved for <span class="math inline formula">\(\lambda\)</span>, which gives the coordinates of the intersection at <span class="math inline formula">\(T\)</span> at <span class="math inline formula">\(oXYZ\)</span>:
                     <br>
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         X^* = \lambda_0 \frac{X}{L^*}
         \]</span>
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         Y^* = \lambda_0 \frac{Y}{L^*}
         \]</span>
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         Z^* = \lambda_0 \frac{Z}{L^*},
-        \]</span> where <span class="math inline">\(\lambda_0\)</span> is the solution of Eq. <a href="#eq:proj-coord">(1)</a>. Coordinates <span class="math inline">\((X_t, Y_t)\)</span> can be defined as the following cross product:
-                    <span class="math display">\[
+        \]</span> where <span class="math inline formula">\(\lambda_0\)</span> is the solution of Eq. <a href="#eq:proj-coord">(1)</a>. Coordinates <span class="math inline formula">\((X_t, Y_t)\)</span> can be defined as the following
+                    cross product:
+                    <span class="math display formula">\[
         \pmb{X_t} = \pmb V \times \pmb{X_t}
         \]</span></p>
-                <span class="math display">\[
+                <span class="math display formula">\[
         \pmb{Y_t} = \pmb V \times \pmb{Y_t}
         \]</span>
-                <p>where <span class="math inline">\(\pmb V = (X^* - X_c, Y^* - Y_c, Z^* - F)\)</span> and <span class="math inline">\(\pmb {X_t}, \pmb{Y_t}\)</span> are the basis vectors of <span class="math inline">\(oXYZ\)</span>. The inverse transformation
-                    can be performed similarly.</p>
+                <p>where <span class="math inline formula">\(\pmb V = (X^* - X_c, Y^* - Y_c, Z^* - F)\)</span> and <span class="math inline formula">\(\pmb {X_t}, \pmb{Y_t}\)</span> are the basis vectors of <span class="math inline formula">\(oXYZ\)</span>.
+                    The inverse transformation can be performed similarly.</p>
 
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
-                    <img src="assets/img/article5.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="50%">
+                    <img src="assets/img/article5.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="60%">
                     <p class="caption">
                         Figure 5
                     </p>
                 </div>
                 <br>
-                <p>The curve <span class="math inline">\(\Phi\)</span> in the first approximation can be considered an ellipse. Its semi-major axis a in the plane T is parallel to the plane of the wheel in the object coordinate system (Fig. <a href="#fig:coord-trans2">6</a>).</p>
+                <p>The curve <span class="math inline formula">\(\Phi\)</span> in the first approximation can be considered an ellipse. Its semi-major axis a in the plane T is parallel to the plane of the wheel in the object coordinate system (Fig. <a href="#fig:coord-trans2">6</a>).</p>
                 <br>
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
-                    <img src="assets/img/article6.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="35%">
+                    <img src="assets/img/article6.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="45%">
                     <p class="caption">
                         Figure 6
                     </p>
                 </div>
                 <p>This allows to determine the geo-location of the object coordinate system in relation to the camera coordinate system.
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         \pmb A \| \pmb a
         \]</span>
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         \alpha = \angle (\pmb B, \pmb b) = \arccos(\pmb b / \pmb a)
         \]</span>
-                    <span class="math display">\[
+                    <span class="math display formula">\[
         \pmb a \perp \pmb b, \pmb A \perp \pmb B
         \]</span>
-                    <br> Note that the vector produced by <span class="math inline">\(\pmb A \times \pmb B\)</span> coincides in direction with the <span class="math inline">\(\pmb {X^b}\)</span> axis of the object. The angle between the plane <span class="math inline">\(T\)</span>                    and the plane of the wheel is <span class="math inline">\(\alpha\)</span>, and the line of their intersection is parallel to <span class="math inline">\(\pmb a\)</span>. Thus, the relative position of the plane of the wheel and
-                    <span class="math inline">\(T\)</span> can be considered determined with an accuracy to scale. Since the mutual position of <span class="math inline">\(T\)</span> and <span class="math inline">\(S\)</span> is well defined, we can assume
-                    that <span class="math inline">\(\pmb {X^b}\)</span> is well defined in <span class="math inline">\(oXYZ\)</span>:
-                    <span class="math display">\[
+                    <br> Note that the vector produced by <span class="math inline formula">\(\pmb A \times \pmb B\)</span> coincides in direction with the <span class="math inline formula">\(\pmb {X^b}\)</span> axis of the object. The angle between the
+                    plane <span class="math inline formula">\(T\)</span> and the plane of the wheel is <span class="math inline formula">\(\alpha\)</span>, and the line of their intersection is parallel to <span class="math inline">\(\pmb a\)</span>.
+                    Thus, the relative position of the plane of the wheel and
+                    <span class="math inline formula">\(T\)</span> can be considered determined with an accuracy to scale. Since the mutual position of <span class="math inline formula">\(T\)</span> and <span class="math inline formula">\(S\)</span> is
+                    well defined, we can assume that <span class="math inline formula">\(\pmb {X^b}\)</span> is well defined in <span class="math inline formula">\(oXYZ\)</span>:
+                    <span class="math display formula">\[
         \pmb {X^b} = ({X_X}^b, {X_Y}^b, {X_Z}^b)
-        \]</span> Note that the projection of the <span class="math inline">\(\pmb {X^b}\)</span> axis in the SC of the image coincides with the lower tangent to both wheels, which immediately gives us the vector <span class="math inline">\(\pmb {Y^b}\)</span>                    in <span class="math inline">\(oXYZ\)</span>. The vector <span class="math inline">\(\pmb {Z^b}\)</span> can be obtained as the cross product of <span class="math inline">\(\pmb {X^b}\)</span> and <span class="math inline">\(\pmb {Y^b}\)</span>.</p>
-                Thus, we have performed the spatial orientation of the object coordinate system relative to the camera coordinate system. For any point D on the image, we can represent the mutually proportional projections of the axes of the object’s coordinate system
-                (Fig. <a href="#fig:bike-coord2">7</a>). The exact scale remains unknown. However, thanks to our AI data, this object is recognized as a bicycle and we can use a scale estimate based on typical dimensions of a bicycle.
+        \]</span> Note that the projection of the <span class="math inline formula">\(\pmb {X^b}\)</span> axis in the SC of the image coincides with the lower tangent to both wheels, which immediately gives us the vector <span class="math inline formula">\(\pmb {Y^b}\)</span>                    in <span class="math inline formula">\(oXYZ\)</span>. The vector <span class="math inline formula">\(\pmb {Z^b}\)</span> can be obtained as the cross product of <span class="math inline formula">\(\pmb {X^b}\)</span> and <span class="math inline formula">\(\pmb {Y^b}\)</span>.</p>
+                <p> Thus, we have performed the spatial orientation of the object coordinate system relative to the camera coordinate system. For any point D on the image, we can represent the mutually proportional projections of the axes of the object’s
+                    coordinate system (Fig. <a href="#fig:bike-coord2">7</a>). The exact scale remains unknown. However, thanks to our AI data, this object is recognized as a bicycle and we can use a scale estimate based on typical dimensions of a bicycle.</p>
                 <br>
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
-                    <img src="assets/img/article7.jpg" alt="capture" style="margin:20px auto; text-align: center;">
+                    <img src="assets/img/article7.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="70%">
                     <p class="caption">
                         Figure 7
                     </p>
@@ -439,7 +447,7 @@
                     significance.
                 </p>
                 <div class="figure articleImage" style="text-align: center; margin:30px;">
-                    <img src="assets/img/article8.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="45%" />
+                    <img src="assets/img/article8.jpg" alt="capture" style="margin:20px auto; text-align: center;" width="55%" />
                     <p class="caption">
                         Figure 8
                     </p>
@@ -448,7 +456,7 @@
                     length, interior orientation elements are considered known, and the image geometry strictly obeys the laws of central projection. In the practice of ICOP Engineering, this is not at all the case. Household uncalibrated cameras of smartphones
                     with variable focal length are used.<br /> 2. Image segmentation, performed by the YOLO9000 network, gives the image of wheels in the form of regular geometric shapes. In practice, this is far from the case. The segments formed by
                     the network are very noisy. Non-trivial efforts are required to pass to a regular geometric figure of type F in Fig. <a href="#fig:coord-trans2">6</a>.<br /> 3. Finally, a bicycle is the simplest object of observation due to its almost
-                    complete two-dimensionality (its width in <span class="math inline">\(\pmb{X^b}\)</span> can be neglected)</p>
+                    complete two-dimensionality (its width in <span class="math inline formula">\(\pmb{X^b}\)</span> can be neglected)</p>
                 <p>In subsequent articles, we will look at smart photogrammetry applications for more complex objects than a bicycle. Let’s start with a motorbike (Fig. <a href="#fig:bike-coord3">8</a>). Already with the case of a motorbike, much more can
                     be achieved in a practical sense than we have achieved with a bike.</p>
                 <!-- </div> -->
