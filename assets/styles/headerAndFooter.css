@@ -6,7 +6,7 @@ body {
     top: 0;
     /* display: flex;
     flex-flow: row nowrap; */
-    background-color: #A7C2D3;
+    background-color: #a7c2d3;
     height: 100px;
 }
 
@@ -38,7 +38,7 @@ body {
     font-size: 20px;
     padding: 20px;
     text-transform: uppercase;
-    font-family: 'Gruppo', cursive;
+    font-family: "Gruppo", cursive;
     font-weight: 600;
     color: #902633;
     text-align: center;
@@ -58,19 +58,19 @@ body {
 .burger_menu_regular {
     display: flex;
     flex-direction: column;
-    background-color: #A7C2D3;
+    background-color: #a7c2d3;
     margin: 0;
     padding: 0;
 }
 
 .burger_menu_back {
-    background-color: #A7C2D3;
+    background-color: #a7c2d3;
 }
 
 .burger-menu_container {
     display: flex;
     justify-content: space-around;
-    background: #A7C2D3;
+    background: #a7c2d3;
     margin: 0;
     padding: 0;
 }
@@ -87,7 +87,7 @@ section {
 }
 
 .section_heading {
-    font-family: 'Gruppo', cursive;
+    font-family: "Gruppo", cursive;
     font-weight: 600;
     color: #902633;
     text-transform: uppercase;
@@ -114,7 +114,7 @@ section {
     color: black;
     font-size: 15px;
     text-transform: uppercase;
-    font-family: 'Gruppo', cursive;
+    font-family: "Gruppo", cursive;
     font-weight: 600;
     color: #902633;
     text-align: center;
@@ -214,6 +214,17 @@ section {
     .hidden_on_small {
         display: none;
     }
+    .technology_side_image {
+        height: 210px;
+        width: 350px;
+        margin: 20px 0;
+    }
+    .pictures_container_side {
+        flex-direction: column;
+    }
+    .technology_advantages {
+        margin: 30px 0;
+    }
 }
 
 @media all and (max-width: 675px) {
@@ -244,7 +255,6 @@ section {
     .map {
         width: 65vw;
         height: 40vh;
-        margin-bottom: 25px;
     }
     .wrapper {
         min-height: 70vh;
@@ -257,5 +267,11 @@ section {
     }
     .wrapper {
         min-height: 50vh;
+    }
+    .pictures_container_image {
+        width: 300px;
+    }
+    .technology_side_image {
+        width: 300px;
     }
 }
