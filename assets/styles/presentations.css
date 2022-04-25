@@ -21,4 +21,11 @@
     font-size: 15px;
     height: 40px;
     cursor: pointer;
+    width: 150px;
+    text-align: center;
+    padding: 8px;
+}
+
+.link_btn {
+    text-decoration: none;
 }
