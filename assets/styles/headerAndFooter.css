@@ -4,8 +4,6 @@ body {
 
 .menu {
     top: 0;
-    /* display: flex;
-    flex-flow: row nowrap; */
     background-color: #a7c2d3;
     height: 100px;
 }
@@ -13,7 +11,6 @@ body {
 .menu_logo {
     width: 150px;
     margin-top: 10px;
-    /* width: 10vw; */
     height: fit-content;
 }
 
@@ -25,10 +22,8 @@ body {
 
 .menu_element {
     display: flex;
-    /* margin: 25px 50px; */
     padding: 10px;
     list-style: none;
-    /* border: 1px solid black; */
     align-items: center;
 }
 
@@ -46,7 +41,6 @@ body {
 
 .refference:hover {
     color: #902633;
-    /* text-decoration: overline underline #e19240; */
     transform: scale(1.1);
     transition: 1s ease-in;
 }
@@ -159,10 +153,6 @@ section {
     p {
         font-size: 15px;
     }
-    /* .about_heading,
-    .technology_bold {
-        font-size: 15px;
-    } */
 }
 
 @media all and (max-width: 1100px) {
