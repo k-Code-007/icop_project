@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/presentations.css">
     <link rel="stylesheet" href="assets/styles/headerAndFooter.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,17 +22,16 @@
 <body>
 
     <div id="Home" class="wrapper">
-
         <div class="menu">
             <ul class="menu_regular">
                 <li class="menu_element">
                     <a href="index.html"><img src="assets/img/logo4.jpg" class="menu_logo" alt="logo"></a>
                 </li>
-                <li class="menu_element"><a class='refference' href="#about">About </a></li>
-                <li class="menu_element"><a class='refference' href="#technology">Technology </a></li>
+                <li class="menu_element"><a class='refference' href="index.html#about">About </a></li>
+                <li class="menu_element"><a class='refference' href="index.html#technology">Technology </a></li>
                 <li class="menu_element"><a class='refference' href="blog.html">smart photogrammetry</a></li>
                 <li class="menu_element"><a class='refference' href="presentations.html">Presentations </a></li>
-                <li class="menu_element"><a class='refference' href="#contacts">Contacts </a></li>
+                <li class="menu_element"><a class='refference' href="index.html#contacts">Contacts </a></li>
             </ul>
 
         </div>
@@ -42,219 +41,76 @@
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="burger_menu_back">
                     <ul class="burger_menu_regular">
-                        <li class="menu_element"><a class='refference' href="#about">About </a></li>
-                        <li class="menu_element"><a class='refference' href="#technology">Technology </a></li>
+                        <li class="menu_element"><a class='refference' href="index.html#about">About </a></li>
+                        <li class="menu_element"><a class='refference' href="index.html#technology">Technology </a></li>
                         <li class="menu_element"><a class='refference' href="blog.html">smart photogrammetry</a></li>
                         <li class="menu_element"><a class='refference' href="presentations.html">Presentations </a></li>
-                        <li class="menu_element"><a class='refference' href="#contacts">Contacts </a></li>
+                        <li class="menu_element"><a class='refference' href="index.html#contacts">Contacts </a></li>
                     </ul>
                 </div>
             </div>
             <nav class="navbar navbar-light ">
                 <div class="container-fluid burger_menu_container" style="background-color: #A7C2D3;">
-                    <li class="menu_element"> <img src="assets/img/logo4.jpg" class="menu_logo" alt="logo"></li>
+                    <li class="menu_element">
+                        <a href="index.html"><img src="assets/img/logo4.jpg" class="menu_logo" alt="logo"></a>
+                    </li>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                 </div>
             </nav>
         </div>
-        <div class="phoneContent">
-            <button id="back" class="btnSlider">&lt</button>
-            <!-- <div class="phoneImg"> -->
-
-            <!-- <img class="phoneImgBack" src="assets/img/sample1_resize_bg-gray.svg" alt="img"> -->
-
-            <div class="video">
-                <div class="container">
-
-                    <video alt="slide" autoplay="autoplay" muted playsinline id="myVideo">
-                            <source src="assets/video/offencive.mp4" type="video/mp4">
-                            </video>
-                </div>
-                <!-- </div> -->
-            </div>
-            <button id="next" class="btnSlider">&gt</button>
-        </div>
-    </div>
-    <div class="clickBtnGoTop">
-        <button onclick="topFunction()" class="btnGoTop" id="myBtn"> <img src="https://img.icons8.com/ios-glyphs/30/000000/collapse-arrow.png"/></button>
-    </div>
 
 
-    <section id="slogans" class="slogans">
-        <hr>
-        <div class="slogan">
-            <ul class="slogan_row">
-                <li class="slogan_inner">
-                    <div class="slogan_element"><img src="assets/img/slogan_any.png" class="slogan_icon" alt="icon">
-                        <p> Intelligent all-around traffic monitoring with just any smartphone.</p>
-                    </div>
+
+        <div class="presentations_list">
+            <h2 class="section_heading">Presentations:</h2>
+            <hr>
+            <ol class="presentation_list_container">
+                <li class="presentation_list_element">
+                    <p class="presentation_list_element_name">Intelligent military objects detection, recognition and geopositioning with just a smartphone</p>
+                    <a href="https://www.icop-systems.com/presentations/Tanks.pptx"><button class="presentation_btn">Download</button></a>
                 </li>
-                <li class="slogan_inner">
-                    <div class="slogan_element"><img src="assets/img/slogan_backgr.png" class="slogan_icon" alt="icon">
-                        <p>Easy on resources, working in the background with any other app on your smartphone.</p>
-                    </div>
+
+                <li class="presentation_list_element">
+                    <p class="presentation_list_element_name">Intelligent all-around traffic monitoring with just any smartphone Part 1</p>
+                    <a href="https://www.icop-systems.com/presentations/Minfin.pptx"><button class="presentation_btn">Download</button></a>
                 </li>
-                <li class="slogan_inner">
-                    <div class="slogan_element"><img src="assets/img/slogan_human.png" class="slogan_icon" alt="icon">
-                        <p> Completely autonomic in real-time, no driver attention is needed. </p>
-                    </div>
+                <li class="presentation_list_element">
+                    <p class="presentation_list_element_name">Intelligent all-around traffic monitoring with just any smartphone Part 2</p>
+                    <a href="https://www.icop-systems.com/presentations/Lane.pptx"><button class="presentation_btn">Download</button></a>
                 </li>
-            </ul>
+
+                <li class="presentation_list_element">
+                    <p class="presentation_list_element_name">Intelligent all-around traffic monitoring with just any smartphone Part 3</p>
+                    <a href="https://www.icop-systems.com/presentations/Presentation_Traffic_Monitoring.pptx"><button class="presentation_btn">Download</button></a>
+                </li>
+            </ol>
         </div>
 
-        <br>
-        <br>
-        <div class="slogan">
-            <ul class="slogan_row">
-                <li class="slogan_inner">
-                    <div class="slogan_element"><img src="assets/img/slogan_sign.png" class="slogan_icon" alt="icon">
-                        <p>Detects up to 50 traffic violation events.</p>
-                    </div>
-                </li>
-                <li class="slogan_inner">
-                    <div class="slogan_element"><img src="assets/img/slogan_ticket.png" class="slogan_icon" alt="icon">
-                        <p>Produces scientifically sound data for dispute resolution</p>
-                    </div>
-                </li>
-                <li class="slogan_inner">
-                    <div class="slogan_element"><img src="assets/img/slogan_detection.png" class="slogan_icon" alt="icon">
-                        <p>Determines the speed of adjacent vehicles with up to 5 km/h error margin, measures the distance between vehicles and any other road objects with 0.1 m accuracy. </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="technology" class="technology">
+        <section class="footer">
+            <hr>
+            <div class="footer_inner">
 
-        <h2 class="section_heading">Technology</h2>
-        <hr>
+                <ul class="footer_regular">
+                    <li class="footer_element"> <img src="assets/img/logo.jpg" class="menu_logo" alt="logo"></li>
+                    <li><a class="footer_element hidden_on_small" href="index.html#about">About </a></li>
+                    <li><a class="footer_element hidden_on_small" href="index.html#technology">Technology </a></li>
+                    <li><a class="footer_element hidden_on_small" href="blog.html">Smart Photogrammetry</a></li>
+                    <li><a class="footer_element hidden_on_small" href="presentations.html">Presentations </a></li>
+                    <li><a class="footer_element hidden_on_small" href="index.html#contacts">Contacts </a></li>
+                    <li><a class="footer_element" href="mailto:evgeny.medvedev.1963@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#e19240" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                      </svg></a></li>
 
-        <div class="container_technology_moreInfo ">
-            <div class="technology_side">
-                <!-- <div> -->
-                <img class="technology_side_image" src="assets/img/Montreal.jpg" alt="">
-                <!-- <p class="technology_side_image_txt">Accurate geopositioning of all detected traffic violations</p> -->
-                <!-- </div> -->
-                <!-- <div> -->
-                <img class="technology_side_image" src="assets/img/Accel.jpg" alt="">
-                <!-- <p class="technology_side_image_txt">Accurate registration of dynamic parameters: speed, direction, acceleration. </p> -->
-                <!-- </div> -->
-            </div>
-            <div class="technology_side">
-                <ul class="technology_advantages">
-                    <li>
-                        <img class="technology_advantages_list_image" src="assets/img/tick-mark.png" alt="checkmark">
-                        <p class="technoligy_element_text">
-                            <div class="technology_bold">ICOP technology assumes complete autonomy. </div> Any modern smartphone (running Android or iOS) with a conventional video camera is supported. Exotic technologies such as Smart Light and Lidar are not used.
-                        </p>
-                    </li>
-                    <li>
-                        <img class="technology_advantages_list_image" src="assets/img/tick-mark.png" alt="checkmark">
-                        <p class="technoligy_element_text">
-                            <div class="technology_bold"> No special smartphone mount is necessary.</div> The only requirement is to ensure visibility of the road (a clear line of sight between the phone camera and the road). No special procedures or calibrations are required from
-                            the user. Driving related vibration is acceptable and does not significantly affect the performance of the app.
-                        </p>
-                    </li>
-                    <li>
-                        <img class="technology_advantages_list_image" src="assets/img/tick-mark.png" alt="checkmark">
-                        <p class="technoligy_element_text">
-                            <div class="technology_bold">ICOP takes care of smartphone resources.</div> Low processor load allows you to use your smartphone in parallel for any other purpose, including your navigation application. Only the data of the detected violation is being
-                            stored.
-                    </li>
                 </ul>
-            </div>
-        </div>
-        <div class="technology_element_text_additional">
-            <p class="technoligy_element_text"> All identified violations are georeferenced, allowing to determine the speed limit, as well as the presence of road signs on a given section. The system detects sudden braking or sharp changes in driving direction and identifies the vehicle
-                forcing you to take these evasive actions. Recognizes and takes into account the presence of road signs and traffic lights. Detects offensive gestures and flags environmentally hazardous vehicles giving off smoky exhaust. </p>
-        </div>
-    </section>
 
-    <section id="about" class="about">
-
-        <h2 class="section_heading">About</h2>
-        <hr>
-        <div class="container_about">
-            <img src="assets/img/sample1_resize2_car.png" alt="img" class="about_image">
-            <div class="about_text">
-                <h5 class="about_heading">An ordinary smartphone uses consumer grade technology producing less accurate information compared to that of specialized systems used in autonomous vehicles.
-                    </h4>
-                    <br>
-                    <p> These systems include high-resolution cameras, lidars, and other dedicated electronic devices. However, ICOP Engineering leverages cutting-edge artificial intelligence and computer vision technologies to overcome this limitation. Our
-                        mobile software application turns any smartphone into an effective means of quantitative traffic monitoring in real-time. With ICOP technologies, you can determine the speed of all vehicles around you. And not only speed! No volitation
-                        will go undetected. Anyone who does not yield when they should have, cuts you off or makes an offensive gesture will be flagged and incur a negative record. </p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-
-        <div class="pictures_container">
-            <div class="pictures_container_side">
-                <img class="pictures_container_image_sign" src="assets/img/unnamed.jpg" alt="">
-                <img class="pictures_container_image" src="assets/img/2.jpg" alt="">
-            </div>
-            <div class="pictures_container_side">
-                <img class="pictures_container_image" src="assets/img/1.jpg" alt="">
-                <img class="pictures_container_image_sign" src="assets/img/unnamed1.jpg" alt="">
-            </div>
-        </div>
-
-    </section>
-
-
-    <section id="contacts" class="contact">
-        <h2 class="section_heading">Contact Us</h2>
-        <hr>
-        <div class="contact_and_map">
-            <div class="contacting_info">
-                <form action="https://formspree.io/f/mbjqbgao" method="POST">
-                    <div class="contact_form">
-                        <label>
-         <p class="contact_form_text"> Your email:</p>
-          <input type="email" name="_replyto">
-        </label>
-                        <label>
-         <p class="contact_form_text">Your message:</p> 
-          <textarea name="message"></textarea>
-        </label>
-                        <!-- your other form fields go here -->
-                        <button class="contact_form_btn" type="submit">Send</button>
-                    </div>
-                </form>
             </div>
 
-            <div class="map_info">
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53956.24593695246!2d34.82536849671146!3d32.30472361584737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d400493c075d5%3A0x2cd995be543c3f22!2sNetanya%2C%20Israel!5e0!3m2!1sen!2sca!4v1635561008874!5m2!1sen!2sca"
-                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section class="footer">
-        <hr>
-        <div class="footer_inner">
-
-            <ul class="footer_regular">
-                <li class="footer_element"> <img src="assets/img/logo.jpg" class="menu_logo" alt="logo"></li>
-                <li><a class="footer_element hidden_on_small" href="#about">About </a></li>
-                <li><a class="footer_element hidden_on_small" href="#technology">Technology </a></li>
-                <li><a class="footer_element hidden_on_small" href="blog.html">Smart Photogrammetry</a></li>
-                <li><a class="footer_element hidden_on_small" href="presentations.html">Presentations </a></li>
-                <li><a class="footer_element hidden_on_small" href="#contacts">Contacts </a></li>
-                <li><a class="footer_element" href="mailto:evgeny.medvedev.1963@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#e19240" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-                  </svg></a></li>
-
-            </ul>
-
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
