@@ -1,0 +1,24 @@
+.presentations_list {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 10% 0 10%;
+}
+
+.presentation_list_element {
+    margin: 20px;
+}
+
+.presentation_list_element_name {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.presentation_btn {
+    border: none;
+    background-color: #a7c2d3;
+    color: black;
+    font-size: 15px;
+    height: 40px;
+    cursor: pointer;
+}
