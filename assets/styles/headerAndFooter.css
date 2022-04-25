@@ -233,6 +233,10 @@ section {
     .burger_menu {
         display: block;
     }
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+    }
     .contact_and_map {
         margin: auto;
     }
