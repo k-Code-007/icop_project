@@ -1,7 +1,7 @@
 .presentations_list {
     display: flex;
     flex-direction: column;
-    margin: 100px 10% 0 10%;
+    margin: 50px 10% 0 10%;
 }
 
 .presentation_list_element {
