@@ -31,5 +31,5 @@ function sayHello() {
 
     window.location.href="../index.html";
 
-//    document.write ("Hello there!");
+    document.write ("Hello there!");
 }
